@@ -9,6 +9,10 @@ public class Teacher extends Person{
 		super(name, age);
 		this.klass = klass;
 	}
+	public Teacher(String name, int age) {
+		super(name, age);
+	}
+
 
 	public Klass getKlass() {
 		return klass;
@@ -20,7 +24,13 @@ public class Teacher extends Person{
 
 	@Override
 	public String introduce() {
-		return String.format("My name is %s. I am %d years old. I am a Teacher. I teach Class %d.", this.getName(), this.getAge(), klass.getNumber());
+		if(klass==null){
+			return String.format("My name is %s. I am %d years old. I am a Teacher. I teach No Class.", this.getName(), this.getAge());
+		}else{
+			return String.format("My name is %s. I am %d years old. I am a Teacher. I teach Class %d.", this.getName(), this.getAge(), klass.getNumber());
+
+		}
+		
 }
 }
  
