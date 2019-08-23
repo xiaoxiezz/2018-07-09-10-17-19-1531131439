@@ -1,20 +1,20 @@
 package practice07;
 
-import practice05.Person;
+import practice07.Person;
 
 public class Student extends Person{
-	private int klass;
+	private Klass klass;
 
-	public Student(String name, int age, int klass) {
+	public Student(String name, int age, Klass klass) {
 		super(name, age);
 		this.klass = klass;
 	}
 
-	public int getKlass() {
+	public Klass getKlass() {
 		return klass;
 	}
 
-	public void setKlass(int klass) {
+	public void setKlass(Klass klass) {
 		this.klass = klass;
 	}
 
