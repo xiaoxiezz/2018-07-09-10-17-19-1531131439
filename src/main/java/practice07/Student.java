@@ -1,6 +1,7 @@
 package practice07;
 
 import practice07.Person;
+import practice07.Klass;;
 
 public class Student extends Person{
 	private Klass klass;
@@ -20,7 +21,7 @@ public class Student extends Person{
 
 	@Override
 	public String introduce() {
-		return String.format("My name is %s. I am %d years old. I am a Student. I am at Class %d.", this.getName(), this.getAge(), this.getKlass());
+		return String.format("My name is %s. I am %d years old. I am a Student. I am at Class %d.", this.getName(), this.getAge(), klass.getNumber());
 	}
 }
  
