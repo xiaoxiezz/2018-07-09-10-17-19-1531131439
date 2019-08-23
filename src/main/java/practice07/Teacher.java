@@ -1,9 +1,10 @@
 package practice07;
 import practice07.Person;
-import practice07.Klass;;
+import practice07.*;
 
 public class Teacher extends Person{
 	private Klass klass;
+	private Student student;
 
 	public Teacher(String name, int age, Klass klass) {
 		super(name, age);
@@ -32,5 +33,11 @@ public class Teacher extends Person{
 		}
 		
 }
+	
+	public String introduceWith(Student student){
+		
+		return String.format("My name is %s. I am %d years old. I am a Teacher. I teach %s.", this.getName(), this.getAge(), student.getName());
+		
+	}
 }
  

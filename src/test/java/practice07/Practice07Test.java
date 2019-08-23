@@ -32,10 +32,10 @@ public class Practice07Test {
         assertThat(klass.getNumber()).isEqualTo(2);
     }
 //
-//    @Test
-//    public void should_class_get_display_name() throws Exception {
-//        assertThat(klass.getDisplayName()).isEqualTo("Class 2");
-//    }
+    @Test
+    public void should_class_get_display_name() throws Exception {
+        assertThat(klass.getDisplayName()).isEqualTo("Class 2");
+    }
 //
     @Test
     public void should_student_have_name_age_and_class_number() throws Exception {
@@ -71,12 +71,12 @@ public class Practice07Test {
         assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.");
     }
 //
-//    @Test
-//    public void should_teacher_introduce_a_student_it_teaches() throws Exception {
-//        Teacher tom = new Teacher("Tom", 21, klass);
-//        Student jerry = new Student("Jerry", 8, klass);
-//        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach Jerry.");
-//    }
+    @Test
+    public void should_teacher_introduce_a_student_it_teaches() throws Exception {
+        Teacher tom = new Teacher("Tom", 21, klass);
+        Student jerry = new Student("Jerry", 8, klass);
+        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach Jerry.");
+    }
 //
 //    @Test
 //    public void should_teacher_introduce_a_student_it_does_not_teach() throws Exception {
